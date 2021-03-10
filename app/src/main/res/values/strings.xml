@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mood Tracker</string>
+    <string name="sign_out">sign out</string>
+    <!-- Facebook consumer key and secret -->
+    <string name="facebook_application_id" translatable="false">1304380229893396</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1304380229893396</string>
+    <!-- Twitter consumer key and secret -->
+    <string name="twitter_consumer_key" translatable="false">6OyiyMaZp9TS4UFsOmucilF3o</string>
+    <string name="twitter_consumer_secret" translatable="false">YszSFhO9kH7CC1VZ6nmGkItMPRDuDUIBOJwVi7fa7s73goALM6</string>
+    <string name="user_name">User Name</string>
+    <string name="update">UPDATE</string>
+    <string name="todo">TODO</string>
+
+    <string name="personality_check">Personality Check</string>
+    <string name="full_name">Full Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="logged_in_by">logged in by</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="button_text_no_action">button_text ( No Action )</string>
+    <string name="sign_in_sign_up">sign in/ sign up</string>
+
+</resources>

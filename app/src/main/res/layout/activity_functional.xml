@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2c2c54"
+    tools:context=".FunctionalActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/mt_logo_100" />
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="180dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="#FFA07A"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Profile"
+        android:textColor="#FFA07A" />
+    <Button
+        android:id="@+id/btn_queries"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="#FFA07A"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#FFA07A"
+        android:text="Queries"
+        />
+    <Button
+        android:id="@+id/result_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_border"
+        android:backgroundTint="#FFA07A"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:textColor="#FFA07A"
+        android:text="Mind Status"
+        />
+    <Button
+        android:id="@+id/stress_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_border"
+        android:backgroundTint="#FFA07A"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:textColor="#FFA07A"
+        android:text="Stress Relief"
+        />
+
+</LinearLayout>

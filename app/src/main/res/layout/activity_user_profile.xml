@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#2c2c54"
+        android:padding="20dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/profile_sample"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/fullName_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:layout_toRightOf="@+id/profile_image"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:text="@string/user_name"
+            android:textColor="#FFA07A"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/loggedInWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullName_field"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/profile_image"
+            android:includeFontPadding="false"
+            android:text="@string/logged_in_by"
+            android:textSize="16sp"
+            android:layout_marginStart="15dp"
+            android:textColor="#FFA07A"
+            android:layout_toEndOf="@+id/profile_image" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/full_name"
+            android:layout_margin="10dp"
+            android:id="@+id/full_name_profile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+                android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5dp"
+            android:hint="@string/e_mail"
+            android:id="@+id/email_profile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+                android:editable="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/phone_number"
+            android:layout_margin="5dp"
+            android:id="@+id/contact_number_profile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawableLeft="@drawable/ic_outline_add_ic_call_24"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/ic_outline_add_ic_call_24"
+                android:inputType="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:hint="@string/date_of_birth"
+            android:layout_margin="5dp"
+            android:id="@+id/dob_profile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dob_click"
+                android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                android:drawablePadding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:focusable="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/btn_update"
+            android:background="#2c2c54"
+            android:fontFamily="@font/bungee"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:textColor="#FFA07A"
+            android:text="@string/update" />
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:background="#2c2c54"
+            android:fontFamily="@font/bungee"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:textColor="#FFA07A"
+            android:text="@string/sign_out" />
+    </LinearLayout>
+
+
+</LinearLayout>

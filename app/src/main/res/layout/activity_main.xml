@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity"
+    android:background="#2c2c54">
+
+
+
+    <!--<TextView
+        android:id="@+id/tv_SignIn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:text="SignIn/SignUp"
+        android:padding="5dp"
+        android:textColor="#FFA07A"/>-->
+
+    <!--<com.agrawalsuneet.dotsloader.loaders.LazyLoader
+        android:id="@+id/three_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:lazyloader_animDur="250"
+        app:lazyloader_dotsDist="5dp"
+        app:lazyloader_dotsRadius="5dp"
+        app:lazyloader_firstDelayDur="150"
+        app:lazyloader_firstDotColor="#FFA07A"
+        app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+        app:lazyloader_secondDelayDur="300"
+        app:lazyloader_secondDotColor="#FFA07A"
+        app:lazyloader_thirdDotColor="#FFA07A" />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</LinearLayout>
